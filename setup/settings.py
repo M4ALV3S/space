@@ -29,9 +29,8 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app']
-
-
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+WSGI_APPLICATION = 'setup.wsgi.app'
 # Application definition
 
 INSTALLED_APPS = [
